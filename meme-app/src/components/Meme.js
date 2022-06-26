@@ -36,6 +36,19 @@ export default function Meme() {
         .then(data => setAllMeme(data.data.memes))
     }, [])
     
+
+    // USING ASYNC-- AWAIT INSTEAD // 
+
+    // React.useEffect(() => {
+    //     async function getMemes() {
+    //         const res = await fetch("https://api.imgflip.com/get_memes")
+    //         const data = await res.json()
+    //         setAllMemes(data.data.memes)
+    //     }
+    //     getMemes()
+    // }, [])
+
+
     
     function getMemeImage() {
         const randomNumber = Math.floor(Math.random() * allMeme.length)
