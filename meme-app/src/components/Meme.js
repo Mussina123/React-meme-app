@@ -29,7 +29,7 @@ export default function Meme() {
     }, [])
     
 
-    // USING ASYNC-- AWAIT INSTEAD // 
+    // USING ASYNC-- AWAIT INSTEAD. // 
 
     // React.useEffect(() => {
     //     async function getMemes() {
