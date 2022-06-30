@@ -1,5 +1,4 @@
 import React from "react"
-import memesData from "../memesData.js"
 
 export default function Meme() {
     
@@ -11,7 +10,7 @@ export default function Meme() {
     
     function handleChange(event){
         
-        const {name, type, value} = event.target
+        const {name, value} = event.target
         
         setMeme(prevText => {
             return {
@@ -80,7 +79,7 @@ export default function Meme() {
                 </button>
             </div>
             <div className="meme">
-                <img src={meme.randomImage} className="meme--image" />
+                <img src={meme.randomImage} className="meme--image" alt="Meme" />
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>
